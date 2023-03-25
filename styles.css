@@ -11,6 +11,12 @@ nav {
     overflow: hidden;
     background-color: #333;
   }
+
+  /* This criterion is linked to a Learning OutcomeHeader Links: Persistent header with links. Doing this threw off my whole page not sure how to fix at this point */
+ 
+  header {
+    position: fixed;
+  }
   
   /* This section caused my a tags to float to the right. */ 
   a {
