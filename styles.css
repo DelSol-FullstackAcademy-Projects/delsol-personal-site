@@ -1,3 +1,9 @@
+/* CSS Changes made to index.html file listed here*/
+
+.indexbkg {
+    background-image: url(https://cdn.pixabay.com/photo/2019/09/21/12/15/matrix-4493783__340.jpg);
+  }
+
 nav {
     list-style-type: none;
     margin: 0;
@@ -49,4 +55,29 @@ nav {
   
   .homeh2 {
     font-family: cursive;
+    color: white;
+  }
+
+  /* Portfolio.html section */
+
+  .portfoliotbkg {
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822__340.jpg);
+  }
+
+  /* About.html section*/
+
+  .aboutbkg {
+    background-image: url(https://cdn.pixabay.com/photo/2014/09/24/16/28/bricks-459299__340.jpg);
+  }
+
+  .bball {
+    border-radius: 25px;
+    border: 10px solid #000000;
+    padding: 20px;
+    width: 2000px
+    height: 150px;
+  }
+
+  .bballfont {
+    font-size: 40px;
   }
