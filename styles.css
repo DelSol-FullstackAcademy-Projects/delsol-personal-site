@@ -47,8 +47,7 @@ nav {
     padding: 14px 16px;
     text-decoration: none;
   }
-  
-  /* Used this */
+
   header {
     font-size: 2rem;
   }
@@ -70,11 +69,12 @@ nav {
     background-image: url(https://cdn.pixabay.com/photo/2014/09/24/16/28/bricks-459299__340.jpg);
   }
 
-  .bball {
+  .bball, .aboutintro {
     border-radius: 25px;
     border: 10px solid #000000;
     padding: 20px;
-    width: 2000px
+    width: fit-content;
+    background-color: antiquewhite
   }
 
   .bballfont {
