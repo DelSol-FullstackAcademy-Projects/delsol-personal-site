@@ -1,0 +1,82 @@
+/* CSS Changes made to index.html file listed here*/
+
+.indexbkg {
+    background-image: url(https://cdn.pixabay.com/photo/2019/09/21/12/15/matrix-4493783__340.jpg);
+  }
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* This section caused my a tags to float to the right. */ 
+  a {
+    /* text-align: right;*/
+    /* Trying to get my text split here but looks like below float right also reorderd my nav list */
+    float: right;
+  }
+  
+  nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #99602bec (custom brown/gold) on hover */
+  nav a:hover {
+    background-color: #99602bec;
+  }
+  
+  /* Used code above to match up with my nav bar. I pulled this code from w3schools. Only thing I changed was the float*/
+  /* This section of code is tied to my index.html file */
+  .name {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Used this */
+  header {
+    font-size: 2rem;
+  }
+  
+  .homeh2 {
+    font-family: cursive;
+    color: white;
+  }
+
+  /* Portfolio.html section */
+
+  .portfoliotbkg {
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822__340.jpg);
+  }
+
+  /* About.html section*/
+
+  .aboutbkg {
+    background-image: url(https://cdn.pixabay.com/photo/2014/09/24/16/28/bricks-459299__340.jpg);
+  }
+
+  .bball {
+    border-radius: 25px;
+    border: 10px solid #000000;
+    padding: 20px;
+    width: 2000px
+  }
+
+  .bballfont {
+    font-size: 40px;
+  }
