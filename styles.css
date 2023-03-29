@@ -63,6 +63,17 @@ nav {
     background-image: url(https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822__340.jpg);
   }
 
+  .protitle {
+    font-weight: 900;
+    font-size: 2em;
+    margin: 0 0 1em;
+    border-radius: 25px;
+    border: 10px solid #000000;
+    padding: 20px;
+    width: fit-content;
+    background-color: #d7b68a
+  }
+
   /* About.html section*/
 
   .aboutbkg {
