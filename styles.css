@@ -32,12 +32,6 @@ nav {
     display: inline-block;
     padding: 5px;
   }
-
-  /* This criterion is linked to a Learning OutcomeHeader Links: Persistent header with links. Doing this threw off my whole page not sure how to fix at this point */
- 
-  header {
-    position: fixed;
-  }
   
   nav ul li a {
     color: rgba(132, 229, 247, 0.822);
@@ -85,7 +79,7 @@ nav {
   #content2 {
     background: #738bd1;
     grid-area: content2;
-    color: rgb(243, 233, 239);
+    color: rgb(219, 33, 148);
   }
   
   #content3 {
@@ -100,11 +94,18 @@ nav {
     color: wheat;
   }
 
-  #footer {
+  footer {
     background: #c7c9d1;
     grid-area: footer;
+    display: flex;
+    justify-content: center;
   }
   
+  #media-link {
+    height: 32px;
+    padding-top: 50%;
+    margin-right: 64px;
+  }
 
   /* This criterion is linked to a Learning OutcomeHeader Links: Persistent header with links. Doing this threw off my whole page not sure how to fix at this point */
  
@@ -161,17 +162,50 @@ nav {
 
 .portfoliotbkg {
     background-image: url(https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822__340.jpg);
+    background-size: cover;
   }
 
-  .protitle {
-    font-weight: 900;
-    font-size: 2em;
-    margin: 0 0 1em;
-    border-radius: 25px;
-    border: 10px solid #000000;
-    padding: 20px;
-    width: fit-content;
-    background-color: #d7b68a
+  .container-portfolio {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1.1fr 1.5fr 0.6fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "main-portfolio main-portfolio main-portfolio main-portfolio"
+      "content1-portfolio content2-portfolio content3-portfolio content4-portfolio"
+      "footer footer footer footer";
+    grid-gap: 0.3rem;
+  }
+
+  #main-portfolio {
+    grid-area: main-portfolio;
+    color: rgb(124, 94, 38);
+    text-align: center;
+  }
+
+  #content1-portfolio {
+    grid-area: content1-portfolio;
+    color: wheat;
+    text-align: center;
+  }
+
+  #content2-portfolio {
+    grid-area: content2-portfolio;
+    color: wheat;
+    text-align: center;
+  }
+
+  #content3-portfolio {
+    grid-area: content3-portfolio;
+    color: wheat;
+    text-align: center;
+  }
+
+  #content4-portfolio {
+    grid-area: content4-portfolio;
+    color: wheat;
+    text-align: center;
   }
 
   /* About.html section*/
