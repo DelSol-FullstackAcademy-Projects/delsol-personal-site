@@ -1,24 +1,122 @@
 /* CSS Changes made to index.html file listed here*/
 
-.indexbkg {
-    background-image: url(https://cdn.pixabay.com/photo/2019/09/21/12/15/matrix-4493783__340.jpg);
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2021/01/12/19/59/laptop-5912463__340.jpg);
+    background-size: cover;
+    background-position:center
+  }
+
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1.1fr 1.5fr 0.8fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "main main main main"
+      "content1 content2 content3 content4"
+      "footer footer footer footer";
+    grid-gap: 0.3rem;
   }
 
 nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: ;
+    grid-area: nav;
+    align-items: center;
+  }
+
+  nav ul li {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    display: inline-block;
+    padding: 5px;
   }
   
+  nav ul li a {
+    color: rgba(132, 229, 247, 0.822);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+  }
+
+  #nav-name {
+    color: rgba(132, 229, 247, 0.822);
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  #h2-main {
+    color: wheat;
+    font-family: cursive;
+    text-align: center;
+  }
+
+  #quote {
+    font-family: 'Satisfy', cursive;
+    font-weight: 100;
+    color: wheat;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #content1 {
+    background: #33398a;
+    grid-area: content1;
+    color: wheat;
+  }
+  
+  #content2 {
+    background: #738bd1;
+    grid-area: content2;
+    color: rgb(243, 233, 239);
+  }
+  
+  #content3 {
+    background: #c7c9d1;
+    grid-area: content3;
+    color: wheat;
+  }
+
+  #content4 {
+    background: #c7c9d1;
+    grid-area: content4;
+    color: wheat;
+  }
+
+  #footer {
+    background: #c7c9d1;
+    grid-area: footer;
+  }
+  
+
+  /* This criterion is linked to a Learning OutcomeHeader Links: Persistent header with links. Doing this threw off my whole page not sure how to fix at this point */
+ 
+  /*
+  header {
+    position: fixed;
+  }
+  */
+
   /* This section caused my a tags to float to the right. */ 
-  a {
+ 
+  /* a {
     /* text-align: right;*/
     /* Trying to get my text split here but looks like below float right also reorderd my nav list */
-    float: right;
+   /*  float: right;
   }
-  
+  */ 
+  /*
   nav a {
     display: inline-block;
     color: white;
@@ -28,13 +126,13 @@ nav {
   }
   
   /* Change the link color to #99602bec (custom brown/gold) on hover */
-  nav a:hover {
+  /* nav a:hover {
     background-color: #99602bec;
   }
-  
+  */
   /* Used code above to match up with my nav bar. I pulled this code from w3schools. Only thing I changed was the float*/
   /* This section of code is tied to my index.html file */
-  .name {
+  /*.name {
     float: left;
     list-style-type: none;
     margin: 0;
@@ -47,20 +145,27 @@ nav {
     padding: 14px 16px;
     text-decoration: none;
   }
-
-  header {
+*/
+  /* header {
     font-size: 2rem;
   }
-  
-  .homeh2 {
-    font-family: cursive;
-    color: white;
-  }
+  */
 
   /* Portfolio.html section */
 
-  .portfoliotbkg {
+.portfoliotbkg {
     background-image: url(https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822__340.jpg);
+  }
+
+  .protitle {
+    font-weight: 900;
+    font-size: 2em;
+    margin: 0 0 1em;
+    border-radius: 25px;
+    border: 10px solid #000000;
+    padding: 20px;
+    width: fit-content;
+    background-color: #d7b68a
   }
 
   /* About.html section*/
