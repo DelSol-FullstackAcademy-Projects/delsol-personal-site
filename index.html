@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Home Page Del Sol</title>
-</head>
-<body class="indexbkg">
+  </head>
+  <body>
     <!--semantic elements header/nav/ clearly defines its content.-->
     <!--non- semantic element span Tells nothing about its content.-->
-    <header>
-        <span class="name">Jose Del Sol</span>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-        </nav>
-    </header>
-    <main>
-        <h2 class="homeh2">Aspiring software developer. Interested in HTML CSS Javascript etc. This page is my very first home page.</h2>
-    <p>Some text</p>
-    </main>
-    <script src="javascript.js"></script>
-</body>
+    <div class="container">
+      <nav>
+        <h2 id="nav-name">Jose Del Sol</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2 id="h2-main">Aiming to be a software developer. HTML, CSS, Javascript, and other technologies pique my interest. One of my favorite quotes is included below.</h2>
+        <h3 id="quote">'Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world.' -Harriet Tubman</h3>
+      </main>
+      <div id="content1">
+        <h3>Project 1</h3>
+        <p>Stuff about my project 1</p>
+      </div>
+      <div id="content2">
+        <h3>Project 2</h2>
+            <p>Stuff about project 2</p>
+      </div>
+      <div id="content3">
+        <h3>Project 3</h3>
+        <p>Stuff about project 3</p>
+      </div>
+      <div id="content4">
+        <h3>Project 4</h3>
+        <p>Stuff about project 4</p>
+      </div>
+      <footer id="footer">Footer</footer>
+      <script src="javascript.js"></script>
+    </div>
+  </body>
 </html>
